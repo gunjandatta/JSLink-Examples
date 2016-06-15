@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.app.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.appconfig.core.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.appconfig.jslink.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.jslink.formCustomizations.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.jslink.fieldCustomizations.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bravo.jslink.viewCustomizations.js" Target="Scripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

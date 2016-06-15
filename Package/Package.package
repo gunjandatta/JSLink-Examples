@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0"
+         Id="07098e04-bdd2-4c33-bb36-08c7ee28d0a4" 
+         solutionId="07098e04-bdd2-4c33-bb36-08c7ee28d0a4" 
+         resetWebServer="false"
+         sharePointProductVersion="15.0"
+         name="BRAVO.AppDev.JSLink"
+         xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="137dc6f5-0de6-4060-915a-238e3cda5ec5" />
+  </features>
+</package>

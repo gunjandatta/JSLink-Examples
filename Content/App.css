@@ -1,0 +1,376 @@
+﻿/********************************************************/
+/* Apps Buttons Container */
+/********************************************************/
+
+/* Buttons Container */
+.app-buttons-container {
+    display: inline-flex;
+    height: 50px;
+    padding-top: 38px;
+    padding-right:10px;
+    position: absolute;
+    right: 0;
+
+}
+
+.app-buttons-container > div {
+    display: inline-flex;
+    height: 25px;
+}
+
+/********************************************************/
+/* Apps Buttons */
+/********************************************************/
+
+/* Button */
+.app-button {
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3faffa), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3faffa, #65a9d7);
+    background: -moz-linear-gradient(top, #3faffa, #65a9d7);
+    background: -ms-linear-gradient(top, #3faffa, #65a9d7);
+    background: -o-linear-gradient(top, #3faffa, #65a9d7);
+    padding: 7px 15px 2px 15px;
+    color: white;
+    font-size: 14px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.app-button:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+    text-decoration:none;
+}
+
+.app-button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+/********************************************************/
+/* Apps Container */
+/********************************************************/
+
+/* Apps Container */
+#apps-container {
+    margin: 0px auto;
+}
+
+/********************************************************/
+/* App Icons */
+/********************************************************/
+.app-icons-refresh:hover,
+.app-icons-upgrade:hover,
+.app-icons-validate:hover
+{
+    text-decoration:none;
+}
+[class^='app-icons-'] *,
+[class*='app-icons-'] *{
+    max-width:30px
+}
+/* App Icons */
+.app-icons {
+    display: inline-flex;
+    float: left;
+    height: 35px;
+    margin-top: -4px;
+    text-decoration:none
+}
+
+.cls-green { fill:#2a7a59; }
+.cls-grey { fill: #707070 }
+.cls-red { fill:#a03b27; }
+.cls-outer { fill:#65a9d7; }
+.cls-inner { fill:#fff; }
+.app-icons-validate:hover .cls-outer, .app-icons-upgrade:hover .cls-outer, .app-icons-refresh:hover .cls-outer { fill:#2266a5; }
+
+/********************************************************/
+/* App Information */
+/********************************************************/
+
+/* App Information */
+.app-info {
+    color: #444;
+    font-family: museo sans,sans-serif;
+    margin-top: 20px;
+    padding-left:15px;
+    width:80%;
+}
+
+.app-info-error {
+    color: red;
+}
+
+.app-info-title {
+    color: #00779C;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+/********************************************************/
+/* App Loading Panel */
+/********************************************************/
+
+/* App Loading Panel */
+.app-loading-panel {
+    background-color: #2266a5;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.app-loading-panel h1, .app-loading-panel h2, .app-loading-panel h3, .app-loading-panel h4, .app-loading-panel h5 {
+    color: #FFF;
+    padding-top:10px;
+}
+
+/* Animation to hide the app loading panel. */
+.hide-panel {
+    animation: moveUpOut .5s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation to show the app information panel. */
+.show-panel {
+    opacity: 100;
+    animation: moveUpIn .75s;
+    animation-fill-mode: forwards;
+}
+
+/********************************************************/
+/* App Loading Animation */
+/********************************************************/
+.loader:before, .loader:after, .loader {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    z-index: 3;
+    -webkit-animation-fill-mode: both; /* Chrome, Safari, Opera */
+    animation-fill-mode: both;
+    -webkit-animation: loader 1.4s infinite ease-in-out; /* Chrome, Safari, Opera */
+    animation: loader 1.4s infinite ease-in-out;
+}
+
+.loader {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    z-index: 3;
+    color: #ffffff;
+    font-size: 5px;
+    margin: 0px auto;
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s; /* Chrome, Safari, Opera */
+    animation-delay: -0.16s;
+}
+
+.loader:before {
+    left: -2.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 2.5em;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+}
+
+/********************************************************/
+/* App Main Panel */
+/********************************************************/
+.app-main-panel {
+    opacity: 0;
+    margin: 0 auto;
+    position:relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/********************************************************/
+/* App Panel */
+/********************************************************/
+.app-panel {
+    border: 1px dotted grey;
+    border-radius: 3px;
+    color: #FFF;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/********************************************************/
+/* App Validation Panel */
+/********************************************************/
+#app-validation-panel { 
+    background: rgba(242,239,242,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(242,239,242,1) 0%, rgba(250,247,250,1) 0%, rgba(255,255,255,1) 49%, rgba(242,239,242,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(242,239,242,1)), color-stop(0%, rgba(250,247,250,1)), color-stop(49%, rgba(255,255,255,1)), color-stop(100%, rgba(242,239,242,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(242,239,242,1) 0%, rgba(250,247,250,1) 0%, rgba(255,255,255,1) 49%, rgba(242,239,242,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(242,239,242,1) 0%, rgba(250,247,250,1) 0%, rgba(255,255,255,1) 49%, rgba(242,239,242,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(242,239,242,1) 0%, rgba(250,247,250,1) 0%, rgba(255,255,255,1) 49%, rgba(242,239,242,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(242,239,242,1) 0%, rgba(250,247,250,1) 0%, rgba(255,255,255,1) 49%, rgba(242,239,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2eff2', endColorstr='#f2eff2', GradientType=1 );
+    border:1px solid lightgrey;
+    border-radius: 0px 5px 5px 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: auto;
+    left: -25%;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    visibility: hidden;
+    width: 30%;
+    z-index: 24;
+}
+
+#app-validation-panel.show-validation {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.app-validation-header, .app-validation-content {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 26;
+}
+
+.app-validation-close, .app-validation-close:hover, .app-validation-close:visited  {
+    font-size: 1.7em;
+    position: absolute;
+    right: 0px;
+    padding-right:10px;
+    text-decoration: none;
+    top: 0px;
+}
+
+.app-validation-header {
+    color: #00779C;
+    padding-top: 10px;
+}
+.app-validation-header h2 {   
+    color: #00779C; 
+    padding-left: 10px;
+}
+
+.app-validation-header hr {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid #fff;
+  width:100%;
+}
+
+.app-validation-debug {
+    color: #707070;
+    padding-left: 10px;
+}
+.app-validation-error {
+    color: #a03b27;
+    padding-left: 10px;
+}
+.app-validation-information {
+    color: #2a7a59;
+    padding-left: 10px;
+}
+.app-validation-warning {
+    color: #65a9d7;
+    padding-left: 10px;
+}
+
+/********************************************************/
+/* Animation */
+/********************************************************/
+
+/* Loader */
+@-webkit-keyframes loader { 0%, 80%,100% {box-shadow: 0 1.5em 0 -1.5em; }40%{box-shadow: 0 1.5em 0 0}}
+@keyframes loader {0%, 80%, 100% {box-shadow: 0 2.5em 0 -1.3em}40% {box-shadow: 0 2.5em 0 0;}}
+
+/* Move Up Out */
+@keyframes moveUpOut{  
+from{transform: rotateX(0deg) scale(1) translateY(0%);opacity:100;}
+to{transform: rotateX(90deg) scale(0.4) translateY(50%);opacity:0;}
+}
+
+/* Move Up In */ 
+@keyframes moveUpIn{  
+0%{transform: rotateX(-90deg) scale(0.4) translateY(50%);opacity:0;}
+30%{transform: rotateX(-90deg) scale(0.4) translateY(50%);opacity:0;}
+to{transform: rotateX(0deg) scale(1) translateY(0%);opacity:100;}
+}
+
+/* Move Left Out */ 
+@-webkit-keyframes moveLeftOut{
+from {left: 0}to {left: 300px;
+animation-play-state:paused; 
+opacity: 0}}
+@keyframes moveLeftOut 
+{from {left: 0}to {left: 300px;
+animation-play-state:paused; 
+opacity: 0}}
+
+/* Move Left In */ 
+@keyframes moveLeftIn
+{from {left: -300px }
+to {left: 0px;
+animation-play-state:paused; 
+opacity: 100}
+}
+@-webkit-keyframes moveLeftIn
+{from {left: -300px }
+to {left: 0px;
+animation-play-state:paused; 
+opacity: 100}
+}
+
+/********************************************************/
+/* Responsive Customizations */
+/********************************************************/
+@media screen and (min-width: 1400px) {
+      .app-panel {width: 50%}
+      .app-main-panel {display:inline-flex}
+}
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+      .app-panel {width: 60%}
+      .app-main-panel {display:inline-flex}
+      .app-validation-header h2 {font-size: 16px}
+}
+
+@media screen and (max-width: 800px) {
+    .app-buttons-container {
+        left:33%;
+        margin: 0 auto; 
+        margin-top: 10px;
+        position: relative;           
+        padding: 10px;
+    }
+    .app-panel {width: 80%}
+    .app-info {
+        color: #484547;
+        margin:0 auto;
+        text-align: center;
+    }
+    .app-validation-header h2 {font-size: 13px}
+    .app-validation-header > p {
+        font-size: 10px;
+        padding-right:5px;
+        word-break: break-all;
+    }
+}
